@@ -2,7 +2,7 @@
 <html lang="tr">
 <head>
   <meta charset="UTF-8" />
-  <title>Boşluk</title>
+  <title>Alıntı</title>
   <style>
     body {
       background: white;
@@ -14,13 +14,32 @@
       align-items: center;
       font-family: monospace;
       font-size: 22px;
+      padding: 20px;
+      text-align: center;
+      flex-direction: column;
+      gap: 20px;
+    }
+    blockquote {
+      font-style: italic;
+      color: #555;
+      border-left: 4px solid #888;
+      padding-left: 15px;
+      max-width: 600px;
+    }
+    cite {
+      display: block;
+      margin-top: 8px;
+      font-weight: bold;
+      color: #333;
     }
   </style>
 </head>
 <body>
-  <div>her şey bir gün bitecek, sadece o kalacak: sessizlik.</div>
+  <blockquote>
+    "Control is an illusion. It’s all just a game we play with ourselves."
+    <cite>— Elliot Alderson, Mr. Robot</cite>
+  </blockquote>
 
-  <!-- Arka planda müzik çalacak audio elementi -->
   <audio src="mymusic.mp3" autoplay loop muted></audio>
 </body>
 </html>
